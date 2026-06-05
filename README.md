@@ -119,3 +119,16 @@ npm run build
 - Keep real `.env` values private and do not commit them.
 - The frontend currently calls the API at `http://localhost:5000`.
 - The backend `dev` script uses `nodemon`; install it before running `npm run dev`.
+## Screenshots
+
+### Login Page
+
+![Login Page](projectimages/login.png)
+
+### Register Page
+
+![Register Page](projectimages/register.png)
+
+### Dashboard
+
+![Dashboard](projectimages/dashboard.png)

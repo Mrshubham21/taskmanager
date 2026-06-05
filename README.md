@@ -1,13 +1,14 @@
 # Task Manager
 
 A full-stack task manager app with user authentication and task CRUD.
-
 ## Features
 
-- Register and login with JWT authentication
-- Create, view, update, delete, and complete tasks
-- User-specific task lists
-- React frontend with Express, MongoDB, and Mongoose backend
+* JWT Authentication
+* MongoDB Atlas Cloud Database
+* Create, Update, Delete Tasks
+* Mark Tasks as Completed/Pending
+* Real-Time Task Search
+* User-Specific Task Management
 
 ## Project Structure
 
@@ -16,11 +17,14 @@ taskmanager/
   backend/    Express API, MongoDB models, auth middleware
   frontend/   React app
 ```
+  ## Prerequisites
 
-## Prerequisites
+* Node.js and npm
+* MongoDB Atlas account
+* MongoDB Atlas cluster
+* MongoDB Atlas database user
+* MongoDB Atlas connection string
 
-- Node.js and npm
-- MongoDB connection string, local or MongoDB Atlas
 
 ## Backend Setup
 
@@ -39,10 +43,13 @@ npm install
 3. Create `backend/.env`:
 
 ```env
-MONGO_URI=your_mongodb_connection_string
+MONGO_URI=mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/taskmanager?retryWrites=true&w=majority
 JWT_SECRET=your_jwt_secret
 PORT=5000
 ```
+
+> This project uses MongoDB Atlas (Cloud Database). Create a cluster, database user, and whitelist your IP address before running the backend.
+
 
 4. Start the API server:
 
